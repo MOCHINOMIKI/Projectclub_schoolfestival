@@ -18,7 +18,7 @@
     <header>
         <button id="button">
             <a href="index.html#1">
-                <img src="weblogo.png" width="350" height="48">
+                <img src="weblogo.png" id="button_img">
             </a>
         </button>
 
@@ -39,6 +39,16 @@
     <style>
         #button {
             position: fixed; top: 14px; left: 50px; margin: auto; background-color: #FFC0CB; border: none; z-index: 1;
+        }
+
+        #button_img{
+            width:350px; height:48px;
+        }
+
+        @media screen and (max-width: 480px){
+            #button_img{
+                width: 100%; height: auto;
+            }
         }
             
         #menu2{
