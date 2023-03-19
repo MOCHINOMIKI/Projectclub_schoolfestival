@@ -36,12 +36,15 @@
     </header>
     
     <!-- images -->
-    <img src="329595089_1396512787842880_742048452221456737_n+.jpg" width="605" height="432" alt="イラスト１" class="image-vw">
+    <picture>
+        <source srcset="IMG_3911.jpg" media="(min-width: 960px)"><!-- PC用 幅960px以上の場合表示 -->
+        <img src="IMG_3912.jpg" alt=""><!-- スマホ用 上記に一致しない場合（幅959px以下で）表示 -->
+    </picture>
 
     <!-- css -->
     <style>
 
-        .image-vw {
+        picture {
             width: 97vw; height: auto; margin: 78px 0px 0px; 
         }
 
