@@ -165,6 +165,38 @@
             transform: rotate(45deg);
         }
 
+        @media screen and (min-width: 600px) {
+            #logo img{max-width:250px;}	
+            nav{
+                display: flex;
+            }
+            .Toggle{
+                display: none;
+            }
+            .menu{
+                width: 100%;
+                font-size:0.9em;
+                background-color: transparent;
+                margin:0 10px;
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+            .menu ul{
+                height: 70px;
+                display: flex;
+                flex-wrap: wrap;
+                 justify-content: flex-end; 
+                align-items: center;
+            }
+            .menu ul li a{
+                padding: 0 1em;
+                border-bottom: none;
+            }
+            .menu ul li a:hover{
+                background-color:transparent;
+            }
+        }
+
     </style>
     
     <!-- java -->
