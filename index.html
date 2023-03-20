@@ -25,14 +25,20 @@
         </button>
 
         <!-- menu -->        
-        <details>
+        <ul style="display: flex; justify-content: end; align-items: center; list-style-type: none;" id="menu3">
+            <li><a href="#1">Info</a></li>
+            <li><a href="Project.html">Project</a></li>
+            <li><a href="member.html">Member</a></li>
+        </ul> 
+
+        <details media="(max-width: 480px)">
             <summary id="menu2">&nbsp;</summary>
             <p>
                 <ul id="menu">
                     <li><a href="#1">Info</a></li>
                     <li><a href="Project.html">Project</a></li>
                     <li><a href="member.html">Member</a></li>
-            </ul>
+                </ul>
             </p>
         </details> 
     </header>
@@ -90,12 +96,18 @@
             width: auto; color: #ffffff; font-size: 36px; font-weight: bold; margin: 0; padding: 12px 0; text-decoration: none; display: block;
             }  
         #menu li a:hover {
-             background: #ff8a9d;
+            background: #ff8a9d;
             }
         #menu {
             position: fixed; top: 78px; left: 0;
             }
 
+        #menu3 li a {
+            width: auto; color: #ffffff; font-size: 36px; font-weight: bold; margin: 0; padding: 12px 0; text-decoration: none; display: block;
+        }  
+        #menu3 li a:hover {
+            background: #ff8a9d;
+        }
     </style>
     
 </head>
